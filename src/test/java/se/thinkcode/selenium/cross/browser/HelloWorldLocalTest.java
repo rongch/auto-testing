@@ -56,12 +56,12 @@ public class HelloWorldLocalTest {
         List<WebDriver[]> browsers = new LinkedList<>();
         WebDriver browser;
 
-        #browser = getLocalFirefox();
+        //browser = getLocalFirefox();
         browser = getLocalHtmlUnit();
         browsers.add(new WebDriver[]{browser});
 
-        #browser = getLocalChrome();
-        #browsers.add(new WebDriver[]{browser});
+        //browser = getLocalChrome();
+        //browsers.add(new WebDriver[]{browser});
 
         return browsers;
     }

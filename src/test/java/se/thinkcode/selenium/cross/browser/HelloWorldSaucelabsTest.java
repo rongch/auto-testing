@@ -56,11 +56,11 @@ public class HelloWorldSaucelabsTest {
         WebDriver driver;
         String jobName = "Hello world cross browser";
 
-        #driver = getInternetExplorerOnXP(jobName);
-        #browsers.add(new WebDriver[]{driver});
+        //driver = getInternetExplorerOnXP(jobName);
+        //browsers.add(new WebDriver[]{driver});
 
-        #driver = getFirefoxOnLinux(jobName);
-        #browsers.add(new WebDriver[]{driver});
+        //driver = getFirefoxOnLinux(jobName);
+        //browsers.add(new WebDriver[]{driver});
         driver = getLocalHtmlUnit(jobName);
         browsers.add(new WebDriver[]{driver});
 
