@@ -3,7 +3,7 @@ plugins {
     id 'org.sonarqube' version '2.0.1'
 }
 
-sonar {
+sonarqube {
     server {
         url = "https://10.100.199.230"
     }
