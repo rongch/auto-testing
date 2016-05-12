@@ -1,7 +1,14 @@
 plugins {
     id 'java'
+    id 'org.sonarqube' version '2.0.1'
 }
 
+sonar {
+    server {
+        url = "https://10.100.199.230"
+    }
+}
+   
 dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.seleniumhq.selenium:selenium-java:2.49.1'
@@ -9,7 +16,12 @@ dependencies {
 }
 
 repositories {
-    mavenCentral()
+    maven {
+        url "https://repo1.maven.org/maven2/"
+    }
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
 }
 
 task wrapper(type: Wrapper) {
