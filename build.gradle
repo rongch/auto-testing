@@ -4,9 +4,6 @@ plugins {
 }
 
 sonarqube {
-    server {
-        url = "https://10.100.199.230"
-    }
 }
    
 dependencies {
